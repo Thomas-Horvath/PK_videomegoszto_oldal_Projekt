@@ -37,22 +37,8 @@ body {
 
 
 
-/*  header section  */
-.logo {
-    font-size: 3rem;
-    font-weight: 600;
-    color: var(--logo-red);
-    background: transparent;
-    text-shadow: 4px 4px 6px var(--black);
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', sans-serif;
-}
 
-video.mainVideo {
-    width: 100%;
-}
-
-/* nav */
+/* nav section */
 nav a {
     display: block;
     color: inherit;
@@ -74,26 +60,111 @@ nav ul li:first-child a {
 
 nav ul li:not(:first-child) a:hover {
     color: var(--text-hover);
-} 
+}
 
 nav ul {
     display: flex;
     list-style: none;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     position: fixed;
-    background-image: linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent);
+    background: rgba(0, 0, 0, .7);
     z-index: 1;
+    transition: background .3s;
 }
+
+nav:hover {
+    background: var(--bg-dark);
+}
+
 .menu {
     display: flex;
     align-items: center;
     margin: 0 2rem;
 }
+
+nav .browse {
+    display: flex;
+}
+
+nav .browse img {
+    display: none;
+}
+
+.icons {
+    height: 2rem;
+}
+
+
+
+.logo {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--logo-red);
+    background: transparent;
+    text-shadow: 4px 4px 6px var(--black);
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0 3rem;
+}
+
+
+/*  header section  */
+video.mainVideo {
+    width: 100%;
+}
+
+header {
+    position: relative;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 20rem;
+    margin: 2rem;
+    width: 60vw;
+}
+
+.playInfo {
+    display: flex;
+    gap: 4rem;
+}
+
+.buttons button {
+    padding: .5rem 2rem;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.buttons button img {
+    height: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---- footer setion --------- */
 footer {
