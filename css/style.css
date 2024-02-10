@@ -30,7 +30,7 @@ body {
     background: var(--bg-dark);
     color: var(--text-color);
     font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
-    min-width: 200px;
+    min-width: 300px;
 }
 
 
@@ -125,14 +125,14 @@ header {
 
 .buttons {
     position: absolute;
-    bottom: 20rem;
+    top: 20rem;
     margin: 2rem;
     width: 60vw;
 }
 
 .playInfo {
     display: flex;
-    gap: 4rem;
+    gap: 1rem;
 }
 
 .buttons button {
@@ -145,14 +145,28 @@ header {
     display: flex;
     align-items: center;
     gap: .5rem;
+    transition: background .5s;
+    white-space: nowrap;
 }
 
 .buttons button img {
     height: 3rem;
 }
 
+button:nth-child(2) {
+    background: var(--btn2-bg);
+    color: var(--white);
+}
 
-
+button:nth-child(1):hover {
+    background: var(--btn1-hover-gb);
+}
+button:nth-child(2):hover {
+    background: var(--btn2-hover-bg);
+}
+button:active {
+    outline: 5px double var(--white);
+}
 
 
 
