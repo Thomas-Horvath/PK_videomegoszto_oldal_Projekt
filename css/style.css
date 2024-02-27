@@ -195,6 +195,7 @@ main h2 {
     overflow-x: scroll;
     padding: 1rem;
     align-items: center;
+    scroll-behavior: smooth;
 }
 
 .films img {
@@ -278,6 +279,72 @@ footer button {
 }
 
 
+.forward {
+    height: 8vw;
+    opacity: .9;
+    position: absolute;
+    left: 85vw;
+    z-index: 1;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+main .films .forward:hover,
+main .films .backward:hover {
+    transform: scale(2);
+}
+
+.backward {
+    height: 8vw;
+    opacity: .9;
+    position: absolute;
+    left: 3vw;
+    z-index: 1;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.icons {
+    display: flex;
+    margin: 1rem;
+    gap: .5rem;
+}
+
+.icons img {
+    width: 20px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+.icons img:hover {
+    opacity: .7;
+}
+.preview {
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    top: 0;
+    width: 25vw;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    background: #1d1d1d;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform .5s, transform .5s;
+}
+
+.preview h2,
+.preview p {
+    margin: 1rem;
+}
+
+.preview video {
+    width: 100%;
+}
+
+.sample:hover>.preview {
+    opacity: 1;
+    transform: scale(1.5);
+}
+
 @media (max-width: 900px) and (min-width: 550px) {
     .browse img {
         display: block;
@@ -313,8 +380,12 @@ footer button {
         width: 90vw;
         bottom: 3rem;
     }
+
     main .films img {
         max-width: 30vw;
+    }
+    .preview {
+        display: none;
     }
 }
 
@@ -348,21 +419,30 @@ footer button {
         margin-left: 1rem;
         text-align: center;
     }
+
     main .films {
         flex-wrap: wrap;
         justify-content: center;
     }
-    main .first-row .films img, main .films img {
+
+    main .first-row .films img,
+    main .films img {
         max-width: 75vw;
         margin-bottom: 3rem;
     }
+
     footer .linksContainer {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
     }
+
     .socialIconsContainer {
-       text-align: center;
-       margin-bottom: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .forward, .backward {
+        display: none;
     }
 }

@@ -40,7 +40,7 @@
             </div>
         </nav>
 
-        <video class="mainVideo" autoplay loop muted >
+        <video class="mainVideo" autoplay loop muted>
             <source src="./assets/videos/video.mp4" type="video/mp4">
         </video>
         <div class="buttons">
@@ -60,7 +60,8 @@
     <main>
         <div class="row first-row">
             <h2>Saját listám</h2>
-            <div class="films">
+            <div class="films" id="js-films">
+                <img class="forward" id="js-forward" src="./assets/icons/arrow-drop-right-line.svg" alt="">
                 <img src="./assets/images/4.jpg" alt="film-poster">
                 <img src="./assets/images/2.jpg" alt="film-poster">
                 <img src="./assets/images/3.jpg" alt="film-poster">
@@ -71,21 +72,196 @@
                 <img src="./assets/images/3.jpg" alt="film-poster">
                 <img src="./assets/images/4.jpg" alt="film-poster">
                 <img src="./assets/images/5.jpg" alt="film-poster">
+                <img class="backward" id="js-backward" src="./assets/icons/arrow-drop-left-line.svg" alt="">
             </div>
         </div>
         <div class="row">
             <h2>Díjnyertes filmek</h2>
             <div class="films">
-                <img src="./assets/images/4.jpg" alt="film-poster">
-                <img src="./assets/images/2.jpg" alt="film-poster">
-                <img src="./assets/images/3.jpg" alt="film-poster">
-                <img src="./assets/images/4.jpg" alt="film-poster">
-                <img src="./assets/images/5.jpg" alt="film-poster">
-                <img src="./assets/images/4.jpg" alt="film-poster">
-                <img src="./assets/images/2.jpg" alt="film-poster">
-                <img src="./assets/images/3.jpg" alt="film-poster">
-                <img src="./assets/images/4.jpg" alt="film-poster">
-                <img src="./assets/images/5.jpg" alt="film-poster">
+               
+
+
+                <div class="sample">
+                    <img src="./assets/images/4.jpg" alt="film-poster">
+                    <div class="preview">
+                        <video class="mainVideo" autoplay loop muted>
+                            <source src="./assets/videos/video.mp4" type="video/mp4">
+                        </video>
+                        <div class="icons">
+                            <img src="./assets/icons/play-circle-line.svg" alt="">
+                            <img src="./assets/icons/search.svg" alt="">
+                            <img src="./assets/icons/thumb-up-line.svg" alt="">
+                            <img src="./assets/icons/thumb-down-line.svg" alt="">
+                            <img src="./assets/icons/arrow_drop_down.svg" alt="">
+                        </div>
+                        <h2>Title</h2>
+                        <p class="genre">Genre</p>
+                    </div>
+                </div>
+
+                <div class="sample">
+                    <img src="./assets/images/2.jpg" alt="film-poster">
+                    <div class="preview">
+                        <video class="mainVideo" autoplay loop muted>
+                            <source src="./assets/videos/video.mp4" type="video/mp4">
+                        </video>
+                        <div class="icons">
+                            <img src="./assets/icons/play-circle-line.svg" alt="">
+                            <img src="./assets/icons/search.svg" alt="">
+                            <img src="./assets/icons/thumb-up-line.svg" alt="">
+                            <img src="./assets/icons/thumb-down-line.svg" alt="">
+                            <img src="./assets/icons/arrow_drop_down.svg" alt="">
+                        </div>
+                        <h2>Title</h2>
+                        <p class="genre">Genre</p>
+                    </div>
+                </div>
+
+                <div class="sample">
+                    <img src="./assets/images/3.jpg" alt="film-poster">
+                    <div class="preview">
+                        <video class="mainVideo" autoplay loop muted>
+                            <source src="./assets/videos/video.mp4" type="video/mp4">
+                        </video>
+                        <div class="icons">
+                            <img src="./assets/icons/play-circle-line.svg" alt="">
+                            <img src="./assets/icons/search.svg" alt="">
+                            <img src="./assets/icons/thumb-up-line.svg" alt="">
+                            <img src="./assets/icons/thumb-down-line.svg" alt="">
+                            <img src="./assets/icons/arrow_drop_down.svg" alt="">
+                        </div>
+                        <h2>Title</h2>
+                        <p class="genre">Genre</p>
+                    </div>
+                </div>
+
+                <div class="sample">
+                    <img src="./assets/images/4.jpg" alt="film-poster">
+                    <div class="preview">
+                        <video class="mainVideo" autoplay loop muted>
+                            <source src="./assets/videos/video.mp4" type="video/mp4">
+                        </video>
+                        <div class="icons">
+                            <img src="./assets/icons/play-circle-line.svg" alt="">
+                            <img src="./assets/icons/search.svg" alt="">
+                            <img src="./assets/icons/thumb-up-line.svg" alt="">
+                            <img src="./assets/icons/thumb-down-line.svg" alt="">
+                            <img src="./assets/icons/arrow_drop_down.svg" alt="">
+                        </div>
+                        <h2>Title</h2>
+                        <p class="genre">Genre</p>
+                    </div>
+                </div>
+
+                <div class="sample">
+                    <img src="./assets/images/5.jpg" alt="film-poster">
+                    <div class="preview">
+                        <video class="mainVideo" autoplay loop muted>
+                            <source src="./assets/videos/video.mp4" type="video/mp4">
+                        </video>
+                        <div class="icons">
+                            <img src="./assets/icons/play-circle-line.svg" alt="">
+                            <img src="./assets/icons/search.svg" alt="">
+                            <img src="./assets/icons/thumb-up-line.svg" alt="">
+                            <img src="./assets/icons/thumb-down-line.svg" alt="">
+                            <img src="./assets/icons/arrow_drop_down.svg" alt="">
+                        </div>
+                        <h2>Title</h2>
+                        <p class="genre">Genre</p>
+                    </div>
+                </div>
+
+                <div class="sample">
+                    <img src="./assets/images/4.jpg" alt="film-poster">
+                    <div class="preview">
+                        <video class="mainVideo" autoplay loop muted>
+                            <source src="./assets/videos/video.mp4" type="video/mp4">
+                        </video>
+                        <div class="icons">
+                            <img src="./assets/icons/play-circle-line.svg" alt="">
+                            <img src="./assets/icons/search.svg" alt="">
+                            <img src="./assets/icons/thumb-up-line.svg" alt="">
+                            <img src="./assets/icons/thumb-down-line.svg" alt="">
+                            <img src="./assets/icons/arrow_drop_down.svg" alt="">
+                        </div>
+                        <h2>Title</h2>
+                        <p class="genre">Genre</p>
+                    </div>
+                </div>
+
+                <div class="sample">
+                    <img src="./assets/images/2.jpg" alt="film-poster">
+                    <div class="preview">
+                        <video class="mainVideo" autoplay loop muted>
+                            <source src="./assets/videos/video.mp4" type="video/mp4">
+                        </video>
+                        <div class="icons">
+                            <img src="./assets/icons/play-circle-line.svg" alt="">
+                            <img src="./assets/icons/search.svg" alt="">
+                            <img src="./assets/icons/thumb-up-line.svg" alt="">
+                            <img src="./assets/icons/thumb-down-line.svg" alt="">
+                            <img src="./assets/icons/arrow_drop_down.svg" alt="">
+                        </div>
+                        <h2>Title</h2>
+                        <p class="genre">Genre</p>
+                    </div>
+                </div>
+
+                <div class="sample">
+                    <img src="./assets/images/3.jpg" alt="film-poster">
+                    <div class="preview">
+                        <video class="mainVideo" autoplay loop muted>
+                            <source src="./assets/videos/video.mp4" type="video/mp4">
+                        </video>
+                        <div class="icons">
+                            <img src="./assets/icons/play-circle-line.svg" alt="">
+                            <img src="./assets/icons/search.svg" alt="">
+                            <img src="./assets/icons/thumb-up-line.svg" alt="">
+                            <img src="./assets/icons/thumb-down-line.svg" alt="">
+                            <img src="./assets/icons/arrow_drop_down.svg" alt="">
+                        </div>
+                        <h2>Title</h2>
+                        <p class="genre">Genre</p>
+                    </div>
+                </div>
+
+                <div class="sample">
+                    <img src="./assets/images/4.jpg" alt="film-poster">
+                    <div class="preview">
+                        <video class="mainVideo" autoplay loop muted>
+                            <source src="./assets/videos/video.mp4" type="video/mp4">
+                        </video>
+                        <div class="icons">
+                            <img src="./assets/icons/play-circle-line.svg" alt="">
+                            <img src="./assets/icons/search.svg" alt="">
+                            <img src="./assets/icons/thumb-up-line.svg" alt="">
+                            <img src="./assets/icons/thumb-down-line.svg" alt="">
+                            <img src="./assets/icons/arrow_drop_down.svg" alt="">
+                        </div>
+                        <h2>Title</h2>
+                        <p class="genre">Genre</p>
+                    </div>
+                </div>
+
+                <div class="sample">
+                    <img src="./assets/images/5.jpg" alt="film-poster">
+                    <div class="preview">
+                        <video class="mainVideo" autoplay loop muted>
+                            <source src="./assets/videos/video.mp4" type="video/mp4">
+                        </video>
+                        <div class="icons">
+                            <img src="./assets/icons/play-circle-line.svg" alt="">
+                            <img src="./assets/icons/search.svg" alt="">
+                            <img src="./assets/icons/thumb-up-line.svg" alt="">
+                            <img src="./assets/icons/thumb-down-line.svg" alt="">
+                            <img src="./assets/icons/arrow_drop_down.svg" alt="">
+                        </div>
+                        <h2>Title</h2>
+                        <p class="genre">Genre</p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
         <div class="row">
@@ -155,6 +331,17 @@
         <div class="copyright">&copy; 1997-2024 ThomFlix, Inc.</div>
     </footer>
 
+
+    <script>
+        const arrowRight = document.getElementById('js-forward');
+        arrowRight.onclick = () => {
+            document.getElementById('js-films').scrollLeft += 800;
+        };
+        const arrowLeft = document.getElementById('js-backward');
+        arrowLeft.onclick = () => {
+            document.getElementById('js-films').scrollLeft -= 800;
+        }
+    </script>
 </body>
 
 </html>
